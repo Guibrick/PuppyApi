@@ -14,23 +14,23 @@ namespace Puppies.Api.Controllers;
 
 public class PuppiesController : ControllerBase
 {
-    private readonly PuppyContext _context;
+    private readonly PuppyContext db;
 
-    public PuppiesController(PuppyContext context)
+    public PuppiesController(PuppyContext _db)
     {
-        _context = context;
+        db = _db;
     }
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Puppy>>> GetAll()
     {
-        return await _context.Puppy.ToListAsync();
+        return await db.Puppy.ToListAsync();
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<Puppy>> GetOne(int id)
     {
-        var puppy = await _context.Puppy.FindAsync(id);
+        var puppy = await db.Puppy.FindAsync(id);
 
         if (puppy == null)
         {
@@ -43,8 +43,8 @@ public class PuppiesController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Puppy>> Create(Puppy puppy)
     {
-        _context.Puppy.Add(puppy);
-        await _context.SaveChangesAsync();
+        db.Puppy.Add(puppy);
+        await db.SaveChangesAsync();
 
         return CreatedAtAction(nameof(GetOne), new { id = puppy.Id }, puppy);
     }
@@ -57,11 +57,11 @@ public class PuppiesController : ControllerBase
             return BadRequest();
         }
 
-        _context.Entry(puppy).State = EntityState.Modified;
+        db.Entry(puppy).State = EntityState.Modified;
 
         try
         {
-            await _context.SaveChangesAsync();
+            await db.SaveChangesAsync();
         }
         catch (DbUpdateConcurrencyException)
         {
@@ -80,20 +80,20 @@ public class PuppiesController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        var puppy = await _context.Puppy.FindAsync(id);
+        var puppy = await db.Puppy.FindAsync(id);
         if (puppy == null)
         {
             return NotFound();
         }
 
-        _context.Puppy.Remove(puppy);
-        await _context.SaveChangesAsync();
+        db.Puppy.Remove(puppy);
+        await db.SaveChangesAsync();
 
         return NoContent();
     }
 
     private bool PuppyExists(int id)
     {
-        return _context.Puppy.Any(e => e.Id == id);
+        return db.Puppy.Any(e => e.Id == id);
     }
 }

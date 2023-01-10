@@ -270,3 +270,16 @@ C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.Exten
 C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\guibe\salt_projects\PuppyApi\puppy.api\bin\Debug\net6.0\System.Memory.Data.dll
