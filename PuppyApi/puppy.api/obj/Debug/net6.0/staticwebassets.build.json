@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "X5tYfchBhwfrS2YGfMvrxC8kFnrBw5sE6SJDKIaHsBw=",
+  "Source": "puppy.api",
+  "BasePath": "_content/puppy.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

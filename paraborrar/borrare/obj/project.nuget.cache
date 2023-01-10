@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hll7NpnR3G97R8ITb0PL7up398MhnRMDgG9wUqIlNuwt5LuR77ARpim8xYmwvvM0naF8a2h8LSX4AdvolMLBLA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guibe\\salt_projects\\paraborrar\\borrare\\borrare.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guibe\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\guibe\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\guibe\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\guibe\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\guibe\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\guibe\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

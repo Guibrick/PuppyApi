@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace puppy.api.Controllers;
+namespace borrare.Controllers;
 
 [ApiController]
 [Route("[controller]")]

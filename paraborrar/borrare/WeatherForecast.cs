@@ -1,4 +1,4 @@
-namespace puppy.api;
+namespace borrare;
 
 public class WeatherForecast
 {

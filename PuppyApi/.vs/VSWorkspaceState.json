@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\puppy.api",
+    "\\puppy.api\\bin",
+    "\\puppy.api\\bin\\Debug",
+    "\\puppy.api\\bin\\Debug\\net6.0",
+    "\\puppy.api\\bin\\Release",
+    "\\puppy.api\\bin\\Release\\net6.0",
+    "\\puppy.api\\Controllers",
+    "\\puppy.api\\Data",
+    "\\puppy.api\\Models"
+  ],
+  "SelectedNode": "\\puppy.api\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
