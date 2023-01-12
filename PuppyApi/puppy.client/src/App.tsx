@@ -1,7 +1,7 @@
 import React from 'react';
 import Table from "./Components/Table";
 import Add from "./Components/Add";
-import Update from "./Components/Update";
+import "./Components/Add.css";
 
 function App() {
     return (

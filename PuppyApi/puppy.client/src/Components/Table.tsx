@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import PuppyInfo from "../Interfaces/PuppyInfo";
+import { Button } from "@mui/material";
+import "../Components/Add.css";
+
 
 function Table() {
 	const [puppyData, setPuppyData] = useState<PuppyInfo[]>([]);
@@ -43,7 +46,6 @@ function Table() {
 	}
 
 	function deletePuppy(puppyId: number) {
-		//const puppy = { id, name, breed, birthdate }
 		fetch(`https://localhost:7002/api/Puppies/${puppyId}`, {
 			method: 'DELETE'
 		}).then((result) => {
@@ -74,6 +76,7 @@ function Table() {
 								<td>{p.name}</td>
 								<td>{p.breed}</td>
 								<td>{p.birthdate}</td>
+								<td><button onClick={() => selectPuppy(p.id)}>Details</button></td>
 								<td><button onClick={() => selectPuppy(p.id)}>Update</button></td>
 								<td><button onClick={() => deletePuppy(p.id)}>Delete</button></td>
 							</tr>)}
@@ -82,7 +85,7 @@ function Table() {
 				<div>
 					<input type="text" value={name} onChange={(e) => { setName(e.target.value) }} /> <br /><br />
 					<input type="text" value={breed} onChange={(e) => { setBreed(e.target.value) }} /> <br /><br />
-					<input type="text" value={birthdate} onChange={(e) => { setBirthdate(e.target.value) }} /> <br /><br />
+					<input type="date" value={birthdate} onChange={(e) => { setBirthdate(e.target.value) }} /> <br /><br />
 					<button onClick={updatePuppy} >Update Puppy</button>
 				</div>
 			</div>

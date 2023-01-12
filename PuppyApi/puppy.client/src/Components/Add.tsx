@@ -1,4 +1,6 @@
 import { useState } from "react";
+//import { Box, Button, FormControl, TextField, InputLabel} from "@mui/material";
+import "../Components/Add.css";
 
 const Add = () => {
     const [name, setName] = useState('');
@@ -19,33 +21,33 @@ const Add = () => {
     }
 
     return (
-        <div className="create">
-            <h2>Add a New Puppy</h2>
-            <form onSubmit={handleSubmit}>
-
-                <label>Name:</label>
-                <input
-                    type="text"
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <label>Breed:</label>
-                <input
-                    type="text"
-                    required
-                    value={breed}
-                    onChange={(e) => setBreed(e.target.value)}
-                />
-                <label>Birth date:</label>
-                <input
-                    type="text"
-                    required
-                    value={birthdate}
-                    onChange={(e) => setBirthdate(e.target.value)}
-                />
-                <button>Add Puppy</button>
-            </form>
+        <div color="Blue">
+            <div className="content">
+                <h2>Add a New Puppy</h2>
+                <form onSubmit={handleSubmit}>
+                    <input
+                        required
+                        value={name}
+                        onChange={(e: any) => setName(e.target.value)}
+                        type="text"
+                        placeholder="Name"
+                    />
+                    <input
+                        value={breed}
+                        onChange={(e: any) => setBreed(e.target.value)}
+                        type="text"
+                        placeholder="Breed"
+                    />
+                    <input
+                        value={birthdate}
+                        onChange={(e: any) => setBirthdate(e.target.value)}
+                        type="date"
+                    />
+                    <div>
+                        <button>Add Puppy</button>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 }
