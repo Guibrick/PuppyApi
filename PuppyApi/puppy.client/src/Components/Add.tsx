@@ -1,6 +1,5 @@
 import { useState } from "react";
-//import { Box, Button, FormControl, TextField, InputLabel} from "@mui/material";
-import "../Components/Add.css";
+import "../Components/Style.css";
 
 const Add = () => {
     const [name, setName] = useState('');
@@ -21,11 +20,11 @@ const Add = () => {
     }
 
     return (
-        <div color="Blue">
-            <div className="content">
-                <h2>Add a New Puppy</h2>
-                <form onSubmit={handleSubmit}>
+        <div>
+            <div className="add-area">
+                <form className="grid-container-form" onSubmit={handleSubmit}>
                     <input
+                        className="form-item1"
                         required
                         value={name}
                         onChange={(e: any) => setName(e.target.value)}
@@ -33,18 +32,20 @@ const Add = () => {
                         placeholder="Name"
                     />
                     <input
+                        className="form-item2"
                         value={breed}
                         onChange={(e: any) => setBreed(e.target.value)}
                         type="text"
                         placeholder="Breed"
                     />
                     <input
+                        className="form-item3"
                         value={birthdate}
                         onChange={(e: any) => setBirthdate(e.target.value)}
                         type="date"
                     />
                     <div>
-                        <button>Add Puppy</button>
+                        <button className="form-item4">Add Puppy</button>
                     </div>
                 </form>
             </div>

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import PuppyInfo from "../Interfaces/PuppyInfo";
-import { Button } from "@mui/material";
-import "../Components/Add.css";
+import "../Components/Style.css";
 
 
 function Table() {
@@ -57,17 +56,16 @@ function Table() {
 
 	return (
 		<>
-			<div className="App">
-				<h1>Update Puppy </h1>
-				<table>
+			<div className="main">
+				<table className="main-table">
+					<thead>
+						<td>ID</td>
+						<td>NAME</td>
+						<td>BREED</td>
+						<td>BIRTH DATE</td>
+						</thead>
 					<tbody>
 						<tr>
-							<td>ID</td>
-							<td>Name</td>
-							<td>Breed</td>
-							<td>Birth date</td>
-							<td>Edit</td>
-							<td>Delete</td>
 
 						</tr>
 						{puppyData.map(p =>
@@ -76,17 +74,17 @@ function Table() {
 								<td>{p.name}</td>
 								<td>{p.breed}</td>
 								<td>{p.birthdate}</td>
-								<td><button onClick={() => selectPuppy(p.id)}>Details</button></td>
-								<td><button onClick={() => selectPuppy(p.id)}>Update</button></td>
-								<td><button onClick={() => deletePuppy(p.id)}>Delete</button></td>
+								<td><button className="details" onClick={() => selectPuppy(p.id)}>Details</button></td>
+								<td><button className="update" onClick={() => selectPuppy(p.id)}>Update</button></td>
+								<td><button className="delete" onClick={() => deletePuppy(p.id)}>Delete</button></td>
 							</tr>)}
 					</tbody>
 				</table>
-				<div>
-					<input type="text" value={name} onChange={(e) => { setName(e.target.value) }} /> <br /><br />
-					<input type="text" value={breed} onChange={(e) => { setBreed(e.target.value) }} /> <br /><br />
+				<div className="input-options">
+					<input type="text" placeholder="Name" value={name} onChange={(e) => { setName(e.target.value) }} /> <br /><br />
+					<input type="text" placeholder="Breed" value={breed} onChange={(e) => { setBreed(e.target.value) }} /> <br /><br />
 					<input type="date" value={birthdate} onChange={(e) => { setBirthdate(e.target.value) }} /> <br /><br />
-					<button onClick={updatePuppy} >Update Puppy</button>
+					<button className="form-item5" onClick={updatePuppy} >Update Puppy</button>
 				</div>
 			</div>
 		</>

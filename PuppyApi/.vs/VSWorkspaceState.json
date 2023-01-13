@@ -2,12 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\puppy.api\\Controllers",
-    "\\puppy.api\\Data",
     "\\puppy.api\\Models",
     "\\puppy.client",
     "\\puppy.client\\src",
-    "\\puppy.client\\src\\Components"
+    "\\puppy.client\\src\\Components",
+    "\\puppy.client\\src\\Interfaces"
   ],
-  "SelectedNode": "\\puppy.client\\src\\Components",
+  "SelectedNode": "\\puppy.client\\src\\App.tsx",
   "PreviewInSolutionExplorer": false
 }
